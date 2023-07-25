@@ -1,0 +1,9 @@
+<?php
+
+namespace App\Contracts;
+ 
+interface PaymentGateway
+{
+    public function processPayment($amount);
+    public function refundPayment($transactionId);
+}

@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Services;
+ 
+use App\Contracts\PaymentGateway;
+ 
+class PayPalPaymentGateway implements PaymentGateway
+{
+    public function processPayment($amount)
+    {
+        // Implementation logic specific to PayPal
+    }
+ 
+    public function refundPayment($transactionId)
+    {
+        // Implementation logic specific to PayPal
+    }
+}
